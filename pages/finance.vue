@@ -1,15 +1,19 @@
 <template>
-    <div>
-      <h2>Finance</h2>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'finance',
-  };
-  </script>
-  
-  <style scoped>
-  /* Optional: Add styles specific to this component */
-  </style>
+  <div>
+    <Home/>
+    <VFooter/>
+  </div>
+</template>
+
+<script>
+export default {
+  layout: 'finance'
+}
+</script>
+
+<style scoped>
+/* Add any page-specific styles here */
+h2 {
+  color: #333;
+}
+</style>

@@ -1,15 +1,19 @@
 <template>
-    <div>
-      <h2>Economic</h2>
-    </div>
-  </template>
+  <div>
+    <Home/>
+    <VFooter/>
+  </div>
+</template>
 
 <script>
-  export default {
-    name: 'economic',
-  };
+export default {
+  layout: 'economic'
+}
 </script>
-  
+
 <style scoped>
-  /* Optional: Add styles specific to this component */
+/* Add any page-specific styles here */
+h2 {
+  color: #333;
+}
 </style>

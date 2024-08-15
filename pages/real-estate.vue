@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  layout: 'business'
+  layout: 'real-estate'
 }
 </script>
 

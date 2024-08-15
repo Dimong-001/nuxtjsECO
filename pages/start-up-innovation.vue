@@ -6,8 +6,10 @@
 </template>
 
 <script>
+import VFooter from '~/components/VFooter.vue';
+
 export default {
-  layout: 'business'
+  layout: 'start-up-innovation'
 }
 </script>
 
