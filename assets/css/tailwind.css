@@ -33,17 +33,36 @@ footer {
 body{
     @apply bg-gray-50;
 }
-/* Additional custom styles */
+/* Additional custom styles
+.flex.items-start.space-x-4 {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+} */
+
+.w-32.h-32 {
+  width: 8rem;
+  height: 8rem;
+}
+
+/* .w-48.h-48 {
+  width: 12rem;
+  height: 12rem;
+} */
+
+.space-y-8 > * + * {
+  margin-top: 2rem;
+}
 .flex.items-start.space-x-4 {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
 }
 
-.w-32.h-32 {
+/* .w-32.h-32 {
   width: 8rem;
   height: 8rem;
-}
+} */
 
 .w-48.h-48 {
   width: 12rem;

@@ -130,6 +130,7 @@
         </div>
       </div>
       <Section/>
+      <NewsBlogSection/>
       <NewsSection/>
     </div> 
   </template>
