@@ -1,13 +1,9 @@
 <template>
   <div>
-    <Home/>
-    <AboveFooter/>
-    <VFooter/>
   </div>
 </template>
 
 <script>
-import VFooter from '~/components/VFooter.vue';
 
 export default {
   layout: 'start-up-innovation'

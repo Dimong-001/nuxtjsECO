@@ -1,8 +1,5 @@
 <template>
   <div>
-    <Home/>
-    <AboveFooter/>
-    <VFooter/>
   </div>
 </template>
 

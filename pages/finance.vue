@@ -1,7 +1,5 @@
 <template>
   <div>
-    <Home/>
-    <VFooter/>
   </div>
 </template>
 

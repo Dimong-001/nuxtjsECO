@@ -1,7 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "@/assets/css/tailwind.css"; /* Import Tailwind CSS */
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap');
 
+/* Apply Battambang font to Khmer text */
+.khmer-font {
+  font-family: 'Battambang', sans-serif;
+}
+
+/* Responsive logo styling */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure dropdown visibility */
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+.z-10 {
+  z-index: 10;
+}
+footer {
+    background-color: #f9fafb; /* Light gray background */
+  }
+  .nuxt-link-active {
+    color: #e53e3e; /* Red-500 color */
+    font-weight: bold;
+  }
 body{
     @apply bg-gray-50;
+}
+/* Additional custom styles */
+.flex.items-start.space-x-4 {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.w-32.h-32 {
+  width: 8rem;
+  height: 8rem;
+}
+
+.w-48.h-48 {
+  width: 12rem;
+  height: 12rem;
+}
+
+.space-y-8 > * + * {
+  margin-top: 2rem;
 }
