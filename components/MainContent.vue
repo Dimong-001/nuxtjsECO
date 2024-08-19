@@ -131,12 +131,17 @@
       </div>
       <Section/>
       <NewsBlogSection/>
-      <NewsSection/>
+      <PictureAd/>
+      <NewsBlogNews01/>
+      <khmer-insider-blog/>
+      <NewsSection/>     
     </div> 
   </template>
   
   <script>
+import KhmerInsiderBlog from './KhmerInsiderBlog.vue';
   export default {
+  components: { KhmerInsiderBlog },
     name: 'Home',
   };
   </script>

@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
   css: [
     './assets/css/tailwind.css'  // Use relative path

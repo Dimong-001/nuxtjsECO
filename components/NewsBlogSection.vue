@@ -2,7 +2,7 @@
     <div class="container mx-auto px-4 py-8">
       <!-- News Section Header -->
       <div class="border-b border-gray-300 pb-4 flex justify-between items-center">
-        <h2 class="text-2xl font-bold khmer-font">ព័ត៌មានសង្គម</h2>
+        <h2 class="text-2xl font-bold khmer-font">ព័ត៌មានសង្ខេប</h2>
         <NuxtLink to="/videos" class="text-gray-500 hover:text-gray-800 khmer-font">
           ពត៌មានតាមវីដេអូ (VIDEO)
         </NuxtLink>
@@ -34,32 +34,32 @@
       return {
         articles: [
           {
-            image: 'https://via.placeholder.com/400x250.png?text=Article+1',
-            title: 'ចំណងជើងអត្ថបទទីមួយ',
+            image: 'https://economy.ams.com.kh/wp-content/uploads/2023/03/SamdechKralaHomUrgesBattambang.jpg',
+            title: 'សម្ដេច​ក្រឡាហោម ​ជំរុញឱ្យរដ្ឋបាលខេត្តបាត់ដំបងសម្រប​សម្រួល​ដល់​វិនិយោគិន​​ដាក់ទុននៅក្នុង​ខេត្ត​បន្ថែម​',
             link: '/article-1',
             date: '6 ខែ មិថុនា'
           },
           {
-            image: 'https://via.placeholder.com/400x250.png?text=Article+2',
-            title: 'ចំណងជើងអត្ថបទទីពីរ',
+            image: 'https://economy.ams.com.kh/wp-content/uploads/2023/02/Garmentindustry.jpg',
+            title: 'បណ្តាញផ្សព្វផ្សាយអន្តរជាតិ ៖ ឧស្សាហកម្ម​សម្លៀកបំពាក់​ ជាអ្នកបំពុលបរិស្ថាន​ធំ​មួយ​របស់​ពិភពលោក',
             link: '/article-2',
             date: '6 ខែ មិថុនា'
           },
           {
-            image: 'https://via.placeholder.com/400x250.png?text=Article+3',
-            title: 'ចំណងជើងអត្ថបទទីបី',
+            image: 'https://economy.ams.com.kh/wp-content/uploads/2022/10/Europeaneconomy.jpg.webp',
+            title: 'ធនាគារពិភពលោក ៖ សេដ្ឋកិច្ចអឺរ៉ុបខាងកើត និងអាស៊ីកណ្តាលនឹងមានកំណើនយឺតនៅឆ្នាំ២០២៣',
             link: '/article-3',
             date: '6 ខែ មិថុនា'
           },
           {
-            image: 'https://via.placeholder.com/400x250.png?text=Article+4',
-            title: 'ចំណងជើងអត្ថបទទីបួន',
+            image: 'https://economy.ams.com.kh/wp-content/uploads/2024/06/3-10.png',
+            title: 'វិស័យ SMEs ជាកម្លាំងជំរុញដ៏សំខាន់ក្នុងដំណើររបស់កម្ពុជាឆ្ពោះទៅការសម្រេចបានគោលដៅជាប្រទេសមាន',
             link: '/article-4',
             date: '6 ខែ មិថុនា'
           },
           {
-            image: 'https://via.placeholder.com/400x250.png?text=Article+5',
-            title: 'ចំណងជើងអត្ថបទទីប្រាំ',
+            image: 'https://economy.ams.com.kh/wp-content/uploads/2022/12/GreenFinancing.jpg.webp',
+            title: 'រដ្ឋមន្រ្តីក្រសួងបរិស្ថាន ៖ កម្ពុជាមានលទ្ធភាពពេញលេញក្នុងការទទួលបានហិរញ្ញប្បទានបៃតង',
             link: '/article-5',
             date: '6 ខែ មិថុនា'
           }
