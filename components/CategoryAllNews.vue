@@ -12,10 +12,10 @@
       <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
         <!-- Main Content -->
-        <div class="lg:col-span-2 space-y-8">
+        <div class="lg:col-span-2 space-y-8" style="font-size: 14px">
           
           <!-- Featured Article -->
-          <div class="relative overflow-hidden">
+          <div class="relative overflow-hidden ">
             <img
               :src="featuredArticle.imageUrl"
               :alt="featuredArticle.title"
@@ -23,16 +23,16 @@
               loading="lazy"
             />
 
-            <div class="p-4">
-              <h2 class="text-xl lg:text-2xl font-semibold mb-2 khmer-font">
+            <div class="p-4" style="font-size: 14px;">
+              <h2 class="text-xl lg:text-2xl font-semibold mb-2 khmer-font" style="font-size: 16px">
                 {{ featuredArticle.title }}
               </h2>
-              <p class="text-gray-600 khmer-font">{{ featuredArticle.category }}, {{ featuredArticle.date }}</p>
+              <p class="text-gray-600 khmer-font" style="font-size: 14px">{{ featuredArticle.category }}, {{ featuredArticle.date }}</p>
             </div>
           </div>
 
           <!-- Additional News Articles -->
-          <div class="space-y-6">
+          <div class="space-y-6" style="font-size: 14px">
             <div
               v-for="article in newsArticles"
               :key="article.id"
@@ -44,11 +44,12 @@
                 class="w-[347px] h-[218px] sm:w-[360px] h-auto sm:h-[202.5px] object-cover"
                 loading="lazy"
               />
-              <div class="p-4 w-full">
-                <h3 class="text-lg sm:text-xl font-semibold mb-2">
+              <div class="p-4 w-full" style="font-size: 14px">
+                <h3 class="text-lg sm:text-xl font-semibold mb-2" style="font-size: 16px">
                   {{ article.title }}
                 </h3>
                 <p class="text-gray-600">{{ article.category }}, {{ article.date }}</p>
+                <p class="mt-2 text-gray-700">{{ article.description }}</p>
               </div>
             </div>
 
@@ -239,6 +240,7 @@ export default {
           category: 'ព្រឹត្តិការណ៍, សេដ្ឋកិច្ច',
           date: '19/08/2024',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/%E1%9E%96%E1%9E%93%E1%9F%92%E1%9E%9285_n.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
         {
           id: 2,
@@ -246,6 +248,7 @@ export default {
           category: 'ព្រឹត្តិការណ៍, អចលនទ្រព្យ',
           date: '19/08/2024',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/1128.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
         {
           id: 3,
@@ -253,6 +256,7 @@ export default {
           category: 'ព្រឹត្តិការណ៍, សេដ្ឋកិច្ច',
           date: '19/08/2024',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/cjfcghchg-1.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
         {
           id: 4,
@@ -260,6 +264,7 @@ export default {
           category: 'ព្រឹត្តិការណ៍, ហិរញ្ញវត្ថុ',
           date: '19/08/2024',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/1128.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
         {
           id: 5,
@@ -267,6 +272,7 @@ export default {
           category: 'ព្រឹត្តិការណ៍, សេដ្ឋកិច្ច',
           date: '19/08/2024',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/1128.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
         {
           id: 6,
@@ -274,55 +280,63 @@ export default {
           category: 'ព្រឹត្តិការណ៍, អាជីវកម្មថ្មី និងនវានុវត្ត',
           date: '19/08/2024',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/1128.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
         {
           id: 7,
-          title: 'News Title 7',
+          title: 'ព្រឹត្តិការណ៍ «សប្តាហ៍រូបថត និងវីដេអូអន្តរជាតិ ឆ្នាំ២០២៤» រួមគ្នាថែរក្សាប្រព័ន្ធអេកូឡូស៊ីនៃដងទន្លេមេគង្គ',
           category: 'Category',
           date: 'Date',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/1128.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
         {
           id: 8,
-          title: 'News Title 8',
+          title: 'ព្រឹត្តិការណ៍ «សប្តាហ៍រូបថត និងវីដេអូអន្តរជាតិ ឆ្នាំ២០២៤» រួមគ្នាថែរក្សាប្រព័ន្ធអេកូឡូស៊ីនៃដងទន្លេមេគង្គ',
           category: 'Category',
           date: 'Date',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/1128.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
         {
           id: 9,
-          title: 'News Title 9',
+          title: 'ព្រឹត្តិការណ៍ «សប្តាហ៍រូបថត និងវីដេអូអន្តរជាតិ ឆ្នាំ២០២៤» រួមគ្នាថែរក្សាប្រព័ន្ធអេកូឡូស៊ីនៃដងទន្លេមេគង្គ',
           category: 'Category',
           date: 'Date',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/1128.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
         {
           id: 10,
-          title: 'News Title 10',
+          title: 'ព្រឹត្តិការណ៍ «សប្តាហ៍រូបថត និងវីដេអូអន្តរជាតិ ឆ្នាំ២០២៤» រួមគ្នាថែរក្សាប្រព័ន្ធអេកូឡូស៊ីនៃដងទន្លេមេគង្គ',
           category: 'Category',
           date: 'Date',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/1128.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
         {
           id: 11,
-          title: 'News Title 11',
+          title: 'ព្រឹត្តិការណ៍ «សប្តាហ៍រូបថត និងវីដេអូអន្តរជាតិ ឆ្នាំ២០២៤» រួមគ្នាថែរក្សាប្រព័ន្ធអេកូឡូស៊ីនៃដងទន្លេមេគង្គ',
           category: 'Category',
           date: 'Date',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/1128.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
         {
           id: 12,
-          title: 'News Title 12',
+          title: 'ព្រឹត្តិការណ៍ «សប្តាហ៍រូបថត និងវីដេអូអន្តរជាតិ ឆ្នាំ២០២៤» រួមគ្នាថែរក្សាប្រព័ន្ធអេកូឡូស៊ីនៃដងទន្លេមេគង្គ',
           category: 'Category',
           date: 'Date',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/1128.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
         {
           id: 13,
-          title: 'News Title 13',
+          title: 'ព្រឹត្តិការណ៍ «សប្តាហ៍រូបថត និងវីដេអូអន្តរជាតិ ឆ្នាំ២០២៤» រួមគ្នាថែរក្សាប្រព័ន្ធអេកូឡូស៊ីនៃដងទន្លេមេគង្គ',
           category: 'Category',
           date: 'Date',
           imageUrl: 'https://economy.ams.com.kh/wp-content/uploads/2024/08/1128.jpg',
+          description: 'ប្រធាន សមាគមសហគ្រិនវ័យក្មេងកម្ពុជា អំពាវនាវឱ្យសហគ្រិន អាជីវករ ពាណិជ្ជករ បន្តថែរក្សាសន្តិភាព សាមគ្គីភាព សណ្តាប់ធ្នាប់សង្គម និងស្ថេរភាពសេដ្ឋកិច្ច',
         },
       ],
       relatedNews: [

@@ -51,7 +51,7 @@
         <div>
           <h3 class="font-semibold text-gray-900 mb-4 text-lg khmer-font">AMS Economy</h3>
           <!-- Two Column Layout for AMS Economy Links -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 ">
             <ul class="space-y-2 text-gray-600 khmer-font">
               <li><NuxtLink to="#" class="hover:text-red-500">សេដ្ឋកិច្ច</NuxtLink></li>
               <li><NuxtLink to="#" class="hover:text-red-500">ហិរញ្ញវត្ថុ</NuxtLink></li>

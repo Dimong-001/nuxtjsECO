@@ -5,6 +5,7 @@
 @import "@/assets/css/tailwind.css"; /* Import Tailwind CSS */
 @import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap');
 
+
 /* Apply Battambang font to Khmer text */
 .khmer-font {
   font-family: 'Battambang', sans-serif;
@@ -131,5 +132,17 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* fixing some font error */
+@font-face {
+  font-family: 'Battambang';
+  src: url('/path/to/fonts/Battambang-Regular.woff2') format('woff2'),
+       url('/path/to/fonts/Battambang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.khmer-font {
+  font-family: 'Battambang', sans-serif;
 }
 
