@@ -7,3 +7,13 @@ export default {
   plugins: [],
 }
 
+module.exports = {
+  theme: {
+    extend: {
+      fontSize: {
+        base: '16px', // Set the default font size to 16px
+      },
+    },
+  },
+  plugins: [],
+};

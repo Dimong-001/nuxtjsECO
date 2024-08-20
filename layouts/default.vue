@@ -2,9 +2,10 @@
   <div>
     <Header @toggleMenu="toggleMenu"/>
     <main>
-      <MainContent />
-      <Footer/>
+      <CategoryAllNews/>
+      <!-- <MainContent/>      -->
     </main>
+    <Footer/>
   </div>
 </template>
 

@@ -134,19 +134,18 @@
       <PictureAd/>
       <NewsBlogNews01/>
       <khmer-insider-blog/>
+      <news-blog-news-02/>
+      <news-blog-news-03/>
       <NewsSection/>     
     </div> 
   </template>
   
   <script>
 import KhmerInsiderBlog from './KhmerInsiderBlog.vue';
+import NewsBlogNews02 from './NewsBlogNews02.vue';
+import NewsBlogNews03 from './NewsBlogNews03.vue';
   export default {
-  components: { KhmerInsiderBlog },
+  components: { KhmerInsiderBlog, NewsBlogNews02, NewsBlogNews03 },
     name: 'Home',
   };
   </script>
-  
-  <style scoped>
-  /* Add custom styles if needed */
-  </style>
-  
