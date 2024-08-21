@@ -9,9 +9,3 @@ export default {
 }
 </script>
 
-<style scoped>
-/* Add any page-specific styles here */
-h2 {
-  color: #333;
-}
-</style>

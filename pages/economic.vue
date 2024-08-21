@@ -1,18 +1,11 @@
 <template>
   <div>
-  
+    <!-- Economic page content, or leave it empty if it's managed in the layout -->
   </div>
 </template>
 
 <script>
 export default {
-  layout: 'economic'
+  // Optional: Economic page-specific logic
 }
 </script>
-
-<style scoped>
-/* Add any page-specific styles here */
-h2 {
-  color: #333;
-}
-</style>

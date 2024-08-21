@@ -2,8 +2,8 @@
   <div>
     <Header @toggleMenu="toggleMenu"/>
     <main>
-      <!-- <CategoryAllNews/> -->
-      <MainContent/>     
+      <CategoryAllNews/>
+      <!-- <MainContent/>      -->
     </main>
     <Footer/>
   </div>

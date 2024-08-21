@@ -108,11 +108,5 @@
     name: 'NewsSection',
   };
   </script>
-  
-  <style scoped>
-  /* Custom styles can go here if needed */
-  .news-item:hover h3 {
-    transition: color 0.3s;
-  }
-  </style>
+
   
