@@ -1,16 +1,23 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss'],
+  ssr: false,
+  components: true, 
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode' // Include both modules in the same array
+  ],
   css: [
     './assets/css/tailwind.css'  // Use relative path
   ],
   app: {
     head: {
       link: [
-        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' }
+        { 
+          rel: 'stylesheet', 
+          href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' 
+        }
       ]
     }
   }
-
 })

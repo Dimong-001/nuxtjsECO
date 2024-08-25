@@ -1,0 +1,35 @@
+{
+  "article": {
+    "id": 1,
+    "title": "ស្ថាបនិក Telegram ចាប់ខ្លួននៅបារាំងភ្លាម រុស្ស៊ីស្នើសុំឲ្យមានការដោះលែង",
+    "image": "https://economy.ams.com.kh/wp-content/uploads/2024/08/photo_2024-08-25_12-28-19.jpg",
+    "category": "ព្រឹត្តិការណ៍, សេដ្ឋកិច្ច",
+    "date": "25/08/2024",
+    "comments": "Leave a comment",
+   "content": [
+    "បរទេស ៖ ស្ថាបនិកនៃក្រុមហ៊ុនបណ្តាញទំនាក់ទំនងដ៏ល្បី Telegram លោក Pavel Durov ត្រូវបានអជ្ញាធរបារាំងចាប់ខ្លួនកាលពីថ្ងៃសៅរ៍ម្សិលមិញនេះ នៅពេលដែលគាត់កំពុងបង្ហាញវត្តមាននៅឯអាកាសយានដ្ឋាន Bourget ជាមួយនឹងជើងហោះហើរឯកជនរបស់លោក។\n\nបុរសជនជាតិរុស្ស៊ីកាន់លិខិតឆ្លងដែន២គឺបារាំងផង និងសហភាពអារ៉ាប់ផង ហើយក៏ត្រូវបានគេស្គាល់គ្រប់គ្នាថាជាមហាសេដ្ឋីមានប្រាក់ពាន់លានដុល្លាររូបនេះ ទើបតែបានធ្វើដំណើរមកពីប្រទេស Azerbaijan ហើយចុះចតនៅអាកាសយានដ្ឋានដែលស្ថិតនៅក្រៅទីក្រុងប៉ារីសត្រឹមតែប៉ុន្មាននាទី និងត្រូវបានចាប់ឃាត់ខ្លួននៅវេលាម៉ោងប្រមាណជា៨យប់ម៉ោងក្នុងស្រុកបារាំង។"]
+
+  },
+  "relatedArticles": [
+    {
+      "id": 2,
+      "title": "Telegram's Founder Arrested in France",
+      "link": "/related-article-1"
+    },
+    {
+      "id": 3,
+      "title": "Russian Authorities Seek Release of Telegram Founder",
+      "link": "/related-article-2"
+    },
+    {
+      "id": 4,
+      "title": "New Developments in Telegram Case",
+      "link": "/related-article-3"
+    },
+    {
+      "id": 5,
+      "title": "International Reactions to Telegram Founder Arrest",
+      "link": "/related-article-4"
+    }
+  ]
+}

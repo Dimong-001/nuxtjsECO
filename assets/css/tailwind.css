@@ -2,80 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "@/assets/css/tailwind.css"; /* Import Tailwind CSS */
+/* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap');
 
-
-/* Apply Battambang font to Khmer text */
+/* Khmer Font Styling */
 .khmer-font {
-  font-family: 'Battambang', sans-serif;
-  font-size: 16px; /* Set font size to 16px */
+  font-family: 'Battambang', 'Noto Sans Khmer', sans-serif;
+  font-size: 14px;
 }
 
-/* Responsive logo styling */
+/* Responsive Image Styling */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Ensure dropdown visibility */
+/* Dropdown Visibility */
 .group:hover .group-hover\:block {
   display: block;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
-/* Footer styling */
+/* Footer Styling */
 footer {
   background-color: #f9fafb; /* Light gray background */
 }
 
-/* Active Nuxt link styling */
+/* Active Nuxt Link Styling */
 .nuxt-link-active {
-  color: #e53e3e; /* Red-500 color */
+  color: #e53e3e; /* Red-500 */
   font-weight: bold;
 }
 
-/* Body background */
+/* Body and Header Styling with Dark Mode */
 body {
-  @apply bg-gray-50;
+  @apply bg-gray-50 text-gray-800; /* Light mode */
 }
 
-/* Flexbox utility */
-.flex.items-start.space-x-4 {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+.dark body {
+  @apply bg-gray-900 text-gray-100; /* Dark mode */
 }
 
-/* Width and height utilities */
-.w-32.h-32 {
-  width: 8rem;
-  height: 8rem;
+header {
+  @apply bg-white text-black; /* Light mode */
 }
 
-.w-48.h-48 {
-  width: 12rem;
-  height: 12rem;
+.dark header {
+  @apply bg-gray-800 text-white; /* Dark mode */
 }
 
-/* Spacing utilities */
-.space-y-8 > * + * {
-  margin-top: 2rem;
-}
-
-/* Advertisement container */
+/* Advertisement Container */
 .ad-container {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   max-width: 100%;
 }
 
-/* Advertisement link styling */
+/* Advertisement Link Styling */
 .ad-link {
   display: block;
   width: 100%;
@@ -84,14 +68,13 @@ body {
   position: relative;
 }
 
-/* Responsive adjustment for smaller screens */
 @media (max-width: 768px) {
   .ad-link {
     padding-bottom: 56.25%; /* 16:9 aspect ratio for mobile */
   }
 }
 
-/* Advertisement image styling */
+/* Advertisement Image Styling */
 .ad-image {
   position: absolute;
   top: 0;
@@ -102,7 +85,7 @@ body {
   display: block;
 }
 
-/* News item hover effects */
+/* News Item Hover Effects */
 .news-item img {
   transition: transform 0.3s ease;
 }
@@ -115,7 +98,7 @@ body {
   transition: color 0.3s;
 }
 
-/* Aspect ratio utility class */
+/* Aspect Ratio Utility */
 .aspect-w-16 {
   position: relative;
   width: 100%;
@@ -133,15 +116,100 @@ body {
   height: 100%;
   object-fit: cover;
 }
-/* fixing some font error */
-@font-face {
-  font-family: 'Battambang';
-  src: url('/path/to/fonts/Battambang-Regular.woff2') format('woff2'),
-       url('/path/to/fonts/Battambang-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+
+/* Dropdown Menu */
+.group:hover .dropdown-menu {
+  display: block;
 }
 
-.khmer-font {
-  font-family: 'Battambang', sans-serif;
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%; /* Align below the parent */
+  z-index: 10;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f8f8f8;
+}
+
+/* Navigation Items (Diagonal Menu) */
+.nav-item,
+.nav-item-small {
+  position: relative;
+  transform: skew(-20deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+
+.nav-item {
+  padding: 1rem 2rem;
+}
+
+.nav-item-small {
+  width: 120px;  /* Reduced width */
+  height: 50px;  /* Reduced height */
+}
+
+.nav-link {
+  transform: skew(20deg); /* Reset skew for the text */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;  /* Ensure the text takes full width */
+}
+
+/* Background color classes for Navigation Items */
+.nav-item.bg-yellow-500 {
+  background-color: #ffc107;
+}
+
+.nav-item.bg-blue-900 {
+  background-color: #1c3d5a;
+}
+
+.nav-item.bg-gray-600 {
+  background-color: #6c757d;
+}
+
+.nav-item.bg-red-600 {
+  background-color: #dc3545;
+}
+
+/* Add a hover effect */
+.nav-item-small:hover {
+  filter: brightness(1.1);
+}
+
+/* Icons Section */
+.icons-section a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Add smooth transition for opacity */
+ul {
+  transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
+  opacity: 1;
+}
+
+ul[style*="display: none"] {
+  opacity: 0;
+}
+
+header {
+  z-index: 1000; /* Ensure it's on top */
+  position: relative; /* Required for z-index to work */
+  pointer-events: auto; /* Ensure clicks are allowed */
 }

@@ -1,11 +1,16 @@
 <template>
   <div>
-    <!-- Economic page content, or leave it empty if it's managed in the layout -->
+    <h1>Economic Page</h1>
+    <p>This is a simple economic page.</p>
   </div>
 </template>
 
 <script>
 export default {
-  // Optional: Economic page-specific logic
-}
+  name: "EconomicPage",
+};
 </script>
+
+<style scoped>
+/* Minimal styles */
+</style>

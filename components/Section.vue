@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50 py-8">
+  <div class="bg-gray-50 dark:bg-gray-900 py-8">
     <div class="container mx-auto px-4">
       <!-- Bottom Section with Articles and Featured Content -->
       <div class="container mx-auto px-4 py-8">
@@ -7,9 +7,11 @@
           <!-- Left Sidebar (News List) -->
           <div class="lg:col-span-1 space-y-6">
             <!-- Header Section -->
-            <div class="border-b-2 border-gray-300 pb-2 flex justify-between items-center">
-              <h1 class="text-2xl lg:text-3xl font-bold khmer-font">ព័ត៌មានពេញនិយម</h1>
-              <NuxtLink to="/#" class="text-gray-500 hover:text-black khmer-font">
+            <div class="border-b-2 border-gray-300 dark:border-gray-700 pb-2 flex justify-between items-center">
+              <h1 class="text-2xl lg:text-3xl font-bold khmer-font text-gray-900 dark:text-gray-100">
+                ព័ត៌មានពេញនិយម
+              </h1>
+              <NuxtLink to="/#" class="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white khmer-font">
                 មើលព័ត៌មានផ្សេងទៀត
               </NuxtLink>
             </div>
@@ -24,46 +26,47 @@
                   loading="lazy" 
                 />
                 <div class="flex-1">
-                  <NuxtLink :to="article.link || '/#'" class="block font-bold hover:underline khmer-font">
+                  <NuxtLink :to="article.link || '/#'" class="block font-bold hover:underline khmer-font dark:text-gray-100 dark:hover:text-blue-400">
                     {{ article.title || 'No title available' }}
                   </NuxtLink>
                   <!-- <p class="text-blue-600 khmer-font">{{ article.category || 'No category' }}</p> -->
-                  <p class="text-gray-500 text-sm khmer-font">{{ article.date || 'No date' }}</p>
+                  <p class="text-gray-500 text-sm khmer-font dark:text-gray-400">{{ article.date || 'No date' }}</p>
                 </div>
               </div>
+
               <!-- Responsive Swiper Slider Under the Articles -->
               <div class="mt-12">
-              <swiper
-                :slides-per-view="1"
-                :space-between="10"
-                pagination="true"
-                navigation="true"
-                class="mySwiper"
-              >
-                <swiper-slide>
-                  <div class="rounded-lg shadow-lg overflow-hidden">
-                    <img 
-                      src="https://i.ibb.co/1ZMVHLr/Screenshot-2024-08-18-220145.png" 
-                      alt="Advertisement Image" 
-                      class="w-full h-auto object-cover" 
-                      loading="lazy" 
-                    />
-                  </div>
-                </swiper-slide>
-              </swiper>
-            </div>
+                <swiper
+                  :slides-per-view="1"
+                  :space-between="10"
+                  pagination="true"
+                  navigation="true"
+                  class="mySwiper"
+                >
+                  <swiper-slide>
+                    <div class="rounded-lg shadow-lg overflow-hidden">
+                      <img 
+                        src="https://i.ibb.co/1ZMVHLr/Screenshot-2024-08-18-220145.png" 
+                        alt="Advertisement Image" 
+                        class="w-full h-auto object-cover" 
+                        loading="lazy" 
+                      />
+                    </div>
+                  </swiper-slide>
+                </swiper>
+              </div>
             </div>
 
             <!-- Empty State -->
-            <div v-else class="text-gray-500 khmer-font">គ្មានព័ត៌មាន</div>
+            <div v-else class="text-gray-500 dark:text-gray-400 khmer-font">គ្មានព័ត៌មាន</div>
           </div>
 
           <!-- Right Content (Featured Article or Banner) -->
-          <div class="lg:col-span-2 rounded-lg overflow-hidden bg-white shadow-lg">
+          <div class="lg:col-span-2 rounded-lg overflow-hidden bg-white dark:bg-gray-800 shadow-lg">
             <!-- Header Section -->
-            <div class="flex justify-between items-center p-4 border-b-2 border-gray-300">
-              <h2 class="text-xl font-bold khmer-font">របាយការណ៍ថ្មីៗ</h2>
-              <NuxtLink to="/#" class="text-blue-500 hover:text-blue-700 khmer-font">
+            <div class="flex justify-between items-center p-4 border-b-2 border-gray-300 dark:border-gray-700">
+              <h2 class="text-xl font-bold khmer-font text-gray-900 dark:text-gray-100">របាយការណ៍ថ្មីៗ</h2>
+              <NuxtLink to="/#" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 khmer-font">
                 មើលទាំងអស់
               </NuxtLink>
             </div>
@@ -75,14 +78,14 @@
             />
             <div class="p-4">
               <NuxtLink to="/#">
-                <h2 class="text-2xl font-bold mb-2 khmer-font hover:text-blue-500">
+                <h2 class="text-2xl font-bold mb-2 khmer-font hover:text-blue-500 dark:text-gray-100 dark:hover:text-blue-400">
                   អាជីវកម្មយកសំបុកត្រចៀកកាំក្នុងស្រុកកំពុងមានទីផ្សារ
                 </h2>
               </NuxtLink>
-              <p class="text-gray-600 khmer-font">
+              <p class="text-gray-600 dark:text-gray-400 khmer-font">
                 គ្រាន់តែឮពាក្យថា សំបុកត្រចៀកកាំ ភាគច្រើនគេតែងតែគិតពីរសជាតិ និងគុណតម្លៃចំពោះសុខភាពដែលទទួលបានពីការទទួលទានភេសជ្ជៈ ឬអាហារដែលចម្រាញ់ចេញពីសំបុកត្រចៀកកាំ។
               </p>
-              <p class="text-gray-500 text-sm mt-2 khmer-font">
+              <p class="text-gray-500 text-sm mt-2 dark:text-gray-400 khmer-font">
                 ជំនួញ, បទយកការណ៍ - 15/08/2024
               </p>
             </div>
@@ -102,12 +105,12 @@
                   <div class="flex-1 mt-4 lg:mt-0 lg:ml-4">
                     <NuxtLink 
                       :to="article.link || '/#'" 
-                      class="block font-bold mb-2 khmer-font hover:text-blue-500"
+                      class="block font-bold mb-2 khmer-font hover:text-blue-500 dark:text-gray-100 dark:hover:text-blue-400"
                     >
                       {{ article.title || 'No title available' }}
                     </NuxtLink>
-                    <p class="text-gray-500 text-sm khmer-font">{{ article.date || 'No date' }}</p>
-                    <p class="text-gray-600 khmer-font mt-2 line-clamp-2">
+                    <p class="text-gray-500 text-sm khmer-font dark:text-gray-400">{{ article.date || 'No date' }}</p>
+                    <p class="text-gray-600 dark:text-gray-400 khmer-font mt-2 line-clamp-2">
                       {{ article.description || 'No description available' }}
                     </p>
                   </div>
@@ -120,6 +123,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
@@ -132,9 +136,8 @@ export default {
   },
   data() {
     return {
-      // Sample articles data
       articles: [
-        {
+      {
           image: 'https://economy.ams.com.kh/wp-content/uploads/2023/12/photo_2023-11-24-2.jpg',
           title: 'ប្រជាកសិករ រីករាយនឹងការប្រមូលផលស្រូវដោយទទួលបានតម្លៃខ្ពស់ជាងឆ្នាំមុនៗ',
           link: '/article-1',
@@ -299,7 +302,6 @@ export default {
       return this.articles.slice(5, 10);
     }
   },
-  // Swiper modules
   mounted() {
     this.swiperOptions = {
       modules: [Navigation, Pagination],

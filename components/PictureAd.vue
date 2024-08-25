@@ -37,8 +37,12 @@ html, body {
   width: 100%;
   height: 100vh; /* Make the container fill the viewport */
   padding: 0;
-  background-color: #f5f5f5; /* Optional background color */
+  background-color: #f5f5f5; /* Light mode background color */
   text-align: center;
+}
+
+.ad-container.dark {
+  background-color: #1a1a1a; /* Dark mode background color */
 }
 
 /* Link styling */
@@ -54,8 +58,12 @@ html, body {
 /* Text content styling */
 .ad-text h2 {
   font-size: 32px;
-  color: #333; /* Main text color */
+  color: #333; /* Main text color for light mode */
   font-weight: bold;
+}
+
+.ad-container.dark .ad-text h2 {
+  color: #f5f5f5; /* Text color for dark mode */
 }
 
 @media (max-width: 768px) {

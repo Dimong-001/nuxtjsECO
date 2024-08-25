@@ -2,20 +2,18 @@
   <!-- Root element -->
   <div>
     <!-- New Block for the Text -->
-    <div class="w-full text-center bg-gray-100 py-4">
-      <div class="text-gray-700 font-semibold khmer-font">
+    <div class="w-full text-center bg-gray-100 dark:bg-gray-800 py-4">
+      <div class="text-gray-700 dark:text-gray-300 font-semibold khmer-font">
         មាតិកា : ព្រឹត្តិការណ៏​
       </div>
     </div>
 
-    <div class="bg-white-100 py-8"> <!-- Changed bg-white-100 to bg-gray-100 -->
+    <div class="bg-gray-100 dark:bg-gray-900 py-8">
       <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8">
-
         <!-- Main Content -->
         <div class="lg:col-span-2 space-y-8" style="font-size: 14px">
-          
           <!-- Featured Article -->
-          <div class="relative overflow-hidden ">
+          <div class="relative overflow-hidden">
             <img
               :src="featuredArticle.imageUrl"
               :alt="featuredArticle.title"
@@ -23,11 +21,11 @@
               loading="lazy"
             />
 
-            <div class="p-4" style="font-size: 14px;">
-              <h2 class="text-xl lg:text-2xl font-semibold mb-2 khmer-font" style="font-size: 16px">
+            <div class="p-4 dark:text-gray-300" style="font-size: 14px;">
+              <h2 class="text-xl lg:text-2xl font-semibold mb-2 khmer-font dark:text-white" style="font-size: 16px">
                 {{ featuredArticle.title }}
               </h2>
-              <p class="text-gray-600 khmer-font" style="font-size: 14px">{{ featuredArticle.category }}, {{ featuredArticle.date }}</p>
+              <p class="text-gray-600 dark:text-gray-400 khmer-font" style="font-size: 14px">{{ featuredArticle.category }}, {{ featuredArticle.date }}</p>
             </div>
           </div>
 
@@ -36,7 +34,7 @@
             <div
               v-for="article in newsArticles"
               :key="article.id"
-              class="flex flex-col sm:flex-row bg-white overflow-hidden khmer-font"
+              class="flex flex-col sm:flex-row bg-white dark:bg-gray-800 overflow-hidden khmer-font"
             >
               <img
                 :src="article.imageUrl"
@@ -44,12 +42,12 @@
                 class="w-[347px] h-[218px] sm:w-[360px] h-auto sm:h-[202.5px] object-cover"
                 loading="lazy"
               />
-              <div class="p-4 w-full" style="font-size: 14px">
-                <h3 class="text-lg sm:text-xl font-semibold mb-2" style="font-size: 16px">
+              <div class="p-4 w-full dark:text-gray-300" style="font-size: 14px">
+                <h3 class="text-lg sm:text-xl font-semibold mb-2 dark:text-white" style="font-size: 16px">
                   {{ article.title }}
                 </h3>
-                <p class="text-gray-600">{{ article.category }}, {{ article.date }}</p>
-                <p class="mt-2 text-gray-700">{{ article.description }}</p>
+                <p class="text-gray-600 dark:text-gray-400">{{ article.category }}, {{ article.date }}</p>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">{{ article.description }}</p>
               </div>
             </div>
 
@@ -58,19 +56,19 @@
               <nav class="flex justify-center">
                 <ul class="inline-flex items-center -space-x-px">
                   <li>
-                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700">1</a>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-l-lg hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700">1</a>
                   </li>
                   <li>
-                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</a>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700">2</a>
                   </li>
                   <li>
-                    <span class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300">...</span>
+                    <span class="px-3 py-2 leading-tight text-gray-500 bg-white dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-700">...</span>
                   </li>
                   <li>
-                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">10</a>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700">10</a>
                   </li>
                   <li>
-                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700">Next Page</a>
+                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-r-lg hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700">Next Page</a>
                   </li>
                 </ul>
               </nav>
@@ -81,7 +79,7 @@
         <!-- Sidebar -->
         <div class="space-y-8">
           <!-- Advertisement Section on Top -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <img
               src="https://i.ibb.co/nnDQdm0/Screenshot-2024-08-20-152936.png"
               alt="Advertisement"
@@ -91,13 +89,13 @@
           </div>
 
           <!-- First Related News Section -->
-          <div class="bg-white rounded-lg overflow-hidden relative">
+          <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden relative">
             <!-- Top Text Overlay -->
-            <div class="flex justify-between items-center bg-gray-100 p-4">
-              <span class="text-lg font-bold text-gray-800 khmer-font">ព្រឹត្តិការណ៍ប្រចាំថ្ងៃ</span>
+            <div class="flex justify-between items-center bg-gray-100 dark:bg-gray-900 p-4">
+              <span class="text-lg font-bold text-gray-800 dark:text-gray-300 khmer-font">ព្រឹត្តិការណ៍ប្រចាំថ្ងៃ</span>
               
               <!-- Clickable "See More" Link -->
-              <NuxtLink to="/all-events" class="text-lg font-bold text-blue-600 hover:text-blue-800 khmer-font">
+              <NuxtLink to="/all-events" class="text-lg font-bold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-600 khmer-font">
                 មើលទាំងអស់
               </NuxtLink>
             </div>          
@@ -110,15 +108,15 @@
             />
 
             <!-- Description -->
-            <div class="p-4 text-center">
-              <p class="text-black-600 text-sm khmer-font">
+            <div class="p-4 text-center dark:text-gray-300">
+              <p class="text-black-600 dark:text-gray-300 text-sm khmer-font">
                 គ្រឹះ​ស្ថាន ខេមា រៀប​ចំ​កម្ម​វិធី​ជំរុញ​ការ​ដាំ​ដើម​ឈើ​ហូប​ផ្លែ​តាម​សហ​គមន៍
               </p>
             </div>
           </div>
+
           <!-- Related News -->
-          <div class="p-4">
-            <!-- <h4 class="text-lg font-semibold mb-4">Related News</h4> -->
+          <div class="p-4 dark:bg-gray-800 dark:text-gray-300">
             <div class="space-y-4">
               <div
                 v-for="news in relatedNews"
@@ -132,15 +130,14 @@
                   loading="lazy"
                 />
                 <div>
-                  <h5 class="font-semibold khmer-font">{{ news.title }}</h5>
-                  <!-- <p class="text-gray-600 text-sm">{{ news.category }}, {{ news.date }}</p> -->
+                  <h5 class="font-semibold khmer-font dark:text-white">{{ news.title }}</h5>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Additional Sidebar Sections -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <img
               src="https://i.ibb.co/nnDQdm0/Screenshot-2024-08-20-152936.png"
               alt="Advertisement"
@@ -149,15 +146,14 @@
             />
           </div>
 
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <img
               src="https://economy.ams.com.kh/wp-content/uploads/2023/11/01_ECOBU006_CPT.jpg"
               alt="Top Image"
               class="w-[488px] h-[200px] object-cover mx-auto mt-4"
               loading="lazy"
             />
-            <div class="p-4">
-              <!-- <h4 class="text-lg font-semibold mb-4">Related News</h4> -->
+            <div class="p-4 dark:text-gray-300">
               <div class="space-y-4">
                 <div
                   v-for="news in relatedNews"
@@ -171,15 +167,14 @@
                     loading="lazy"
                   />
                   <div>
-                    <h5 class="font-semibold khmer-font">{{ news.title }}</h5>
-                    <!-- <p class="text-gray-600 text-sm">{{ news.category }}, {{ news.date }}</p> -->
+                    <h5 class="font-semibold khmer-font dark:text-white">{{ news.title }}</h5>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <img
               src="https://i.ibb.co/nnDQdm0/Screenshot-2024-08-20-152936.png"
               alt="Advertisement"
@@ -188,15 +183,14 @@
             />
           </div>
 
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <img
               src="https://economy.ams.com.kh/wp-content/uploads/2023/11/01_ECOBU006_CPT.jpg"
               alt="Top Image"
               class="w-[488px] h-[200px] object-cover mx-auto mt-4"
               loading="lazy"
             />
-            <div class="p-4">
-              <!-- <h4 class="text-lg font-semibold mb-4">Related News</h4> -->
+            <div class="p-4 dark:text-gray-300">
               <div class="space-y-4">
                 <div
                   v-for="news in relatedNews"
@@ -210,8 +204,7 @@
                     loading="lazy"
                   />
                   <div>
-                    <h5 class="font-semibold khmer-font">{{ news.title }}</h5>
-                    <!-- <p class="text-gray-600 text-sm">{{ news.category }}, {{ news.date }}</p> -->
+                    <h5 class="font-semibold khmer-font dark:text-white">{{ news.title }}</h5>
                   </div>
                 </div>
               </div>

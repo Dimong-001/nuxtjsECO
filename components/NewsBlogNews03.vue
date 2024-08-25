@@ -6,15 +6,15 @@
         <!-- Breaking News Section -->
         <div>
           <div class="flex items-center justify-between mb-4">
-            <h2 class="text-lg font-bold khmer-font">ប្រធានបទពេញនិយម</h2>
-            <NuxtLink to="#" class="text-sm text-blue-600 hover:text-blue-800 flex items-center khmer-font">
+            <h2 class="text-lg font-bold khmer-font text-gray-900 dark:text-gray-100">ប្រធានបទពេញនិយម</h2>
+            <NuxtLink to="#" class="text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 flex items-center khmer-font">
               មើលទាំងអស់➧
             </NuxtLink>
           </div>
-          <hr class="border-gray-300 mb-4" />
+          <hr class="border-gray-300 dark:border-gray-700 mb-4" />
           <ol class="list-decimal list-inside space-y-4 khmer-font">
-            <li v-for="(news, index) in leftNewsItems" :key="index" class="text-gray-800">
-              <NuxtLink to="#" class="hover:text-blue-600">{{ news.title }}</NuxtLink>
+            <li v-for="(news, index) in leftNewsItems" :key="index" class="text-gray-800 dark:text-gray-100">
+              <NuxtLink to="#" class="hover:text-blue-600 dark:hover:text-blue-400">{{ news.title }}</NuxtLink>
             </li>
           </ol>
         </div>
@@ -22,18 +22,18 @@
         <!-- Journalists Section -->
         <div class="mt-12">
           <div class="flex items-center justify-between mb-4">
-            <h2 class="text-lg font-bold khmer-font">ក្រុមការងារ</h2>
-            <NuxtLink to="#" class="text-sm text-blue-600 hover:text-blue-800 flex items-center khmer-font">
+            <h2 class="text-lg font-bold khmer-font text-gray-900 dark:text-gray-100">ក្រុមការងារ</h2>
+            <NuxtLink to="#" class="text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 flex items-center khmer-font">
               មើលទាំងអស់➧
             </NuxtLink>
           </div>
-          <hr class="border-gray-300 mb-4" />
+          <hr class="border-gray-300 dark:border-gray-700 mb-4" />
           <ul class="space-y-4">
             <li v-for="(journalist, index) in journalists" :key="index" class="flex items-center space-x-4">
               <img :src="journalist.image" :alt="journalist.name" class="w-12 h-12 rounded-full object-cover" />
               <div>
-                <p class="text-lg font-semibold khmer-font">{{ journalist.name }}</p>
-                <p class="text-gray-600 text-sm">{{ journalist.title }}</p>
+                <p class="text-lg font-semibold khmer-font text-gray-900 dark:text-gray-100">{{ journalist.name }}</p>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">{{ journalist.title }}</p>
               </div>
             </li>
           </ul>
@@ -44,22 +44,22 @@
       <div class="w-full lg:w-2/3">
         <!-- Header Above Grid -->
         <div class="flex items-center justify-between mb-4">
-          <h2 class="text-lg font-bold khmer-font">ចំណាប់អារម្មណ៍របស់ប្រិយមិត្ត</h2>
-          <NuxtLink to="#" class="text-sm text-blue-600 hover:text-blue-800 flex items-center khmer-font">
+          <h2 class="text-lg font-bold khmer-font text-gray-900 dark:text-gray-100">ចំណាប់អារម្មណ៍របស់ប្រិយមិត្ត</h2>
+          <NuxtLink to="#" class="text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 flex items-center khmer-font">
             មើលទាំងអស់➧
           </NuxtLink>
         </div>
-        <hr class="border-gray-300 mb-4" />
+        <hr class="border-gray-300 dark:border-gray-700 mb-4" />
         
         <!-- Grid of News Items -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div v-for="(news, index) in rightNewsItems" :key="index" class="news-item">
             <NuxtLink to="#">
               <div class="aspect-w-16 aspect-h-9 mb-4">
-                <img :src="news.imageSrc" :alt="news.title" class="w-full h-full object-cover" />
+                <img :src="news.imageSrc" :alt="news.title" class="w-full h-full object-cover rounded-lg" />
               </div>
-              <h3 class="text-lg font-semibold mb-2 khmer-font hover:text-blue-600">{{ news.title }}</h3>
-              <p class="text-gray-600 khmer-font">{{ news.date }}</p>
+              <h3 class="text-lg font-semibold mb-2 khmer-font text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400">{{ news.title }}</h3>
+              <p class="text-gray-600 dark:text-gray-400 khmer-font">{{ news.date }}</p>
             </NuxtLink>
           </div>
         </div>
@@ -133,4 +133,3 @@ export default {
   }
 };
 </script>
-
