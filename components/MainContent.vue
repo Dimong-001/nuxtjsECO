@@ -91,16 +91,16 @@
               </div>
               <!-- Responsive Swiper Slider Under the Articles -->
               <div class="mt-12">
-    <div class="rounded-lg shadow-lg overflow-hidden">
-      <img 
-        src="/Images/ads-01.png" 
-        alt="Advertisement Image" 
-        class="w-full h-auto object-cover" 
-        loading="lazy" 
-      />
-    </div>
-    <!-- If you have more images, add more image elements here -->
-  </div>
+                <div class="rounded-lg shadow-lg overflow-hidden">
+                  <img 
+                    src="/Images/ads-01.png" 
+                    alt="Advertisement Image" 
+                    class="w-full h-auto object-cover" 
+                    loading="lazy" 
+                  />
+                </div>
+                <!-- If you have more images, add more image elements here -->
+              </div>
             </div>
             
             <!-- Empty State -->
