@@ -13,7 +13,7 @@
         </NuxtLink>
 
         <!-- Desktop Navigation Links -->
-        <ul class="hidden lg:flex flex-grow justify-center space-x-6 text-base khmer-font">
+        <ul class="hidden lg:flex flex-grow justify-center space-x-6 text-base font-khmer">
           <DropdownMenu
             title="សេដ្ឋកិច្ច"
             :link="'/economic'"

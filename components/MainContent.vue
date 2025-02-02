@@ -11,7 +11,7 @@
       <div class="container mx-auto px-4">
         <!-- Header Section -->
         <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between mb-4 border-b-2 border-gray-300 dark:border-gray-700 pb-2">
-          <h1 class="text-2xl lg:text-3xl font-bold khmer-font mb-4 lg:mb-0 text-gray-900 dark:text-gray-100">
+          <h1 class="text-2xl lg:text-3xl font-bold khmer-font mb-4 lg:mb-0 text-gray-900 dark:text-gray-100 ">
             ព្រឹត្តិការណ៍ប្រចាំថ្ងៃ
           </h1>
           <div class="space-x-4">
